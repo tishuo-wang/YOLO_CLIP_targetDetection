@@ -37,7 +37,7 @@ product_classes = [
 ]
 
 # 读取输入图片
-image_path = 'dataset/CLIPtest_pic/10.jpeg'
+image_path = 'dataset/test_CLIP_1.jpg'
 image = cv2.imread(image_path)
 if image is None:
     raise FileNotFoundError(f"Image not found at path: {image_path}")
@@ -60,7 +60,7 @@ for _ in range(1):
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     image_pil = Image.fromarray(image_rgb)
     draw = ImageDraw.Draw(image_pil)
-    font = ImageFont.truetype("simsun.ttc", 80)
+    font = ImageFont.truetype("simsun.ttc", 15)
 
     for i, box in enumerate(boxes):
         x1, y1, x2, y2 = [int(coord) for coord in box]
