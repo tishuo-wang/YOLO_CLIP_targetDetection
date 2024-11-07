@@ -1,6 +1,7 @@
 # YOLO_CLIP_targetDetection
 
 **描述**：基于YOLO和CLIP的物体检测和细类分类项目。
+
 **写在前面**:本项目的测试和直接调用的文件是`test_YOLO.py`和`test_YOLO_video.py`，这两个文件分别用于图像和视频的检测和分类。具体的使用方法参考4.2和4.3。
 
 ## 1. 项目简介
