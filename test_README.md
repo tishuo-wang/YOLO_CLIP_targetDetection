@@ -24,7 +24,7 @@ python test_YOLO.py
 
 - **加载模型**：
   使用 `open_clip` 加载CLIP模型，并加载微调后的权重文件 `fine_tuned_clip_model.pth`。
-  使用 `ultralytics` 加载 YOLOv8 模型 `yolov10s.pt`。
+  使用 `ultralytics` 加载 YOLOv10 模型 `yolov10s.pt`。
 
 - **检测和分类**：
   使用YOLO对图像进行初步检测，获取目标区域的边界框和初步类别。
