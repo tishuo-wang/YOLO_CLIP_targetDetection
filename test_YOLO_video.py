@@ -24,7 +24,7 @@ yolo_model.to(device)
 product_classes = [
     "Lemon Drink",
     "Bottle",
-    "Oreo cookies",
+    "南孚电池",
     "三得利无糖乌龙茶",
     "阿萨姆奶茶",
     "六神花露水",
@@ -36,7 +36,7 @@ product_classes = [
 ]
 
 # 读取视频流
-video_path = 0  # 摄像头设备，或者视频文件路径
+video_path = 1  # 摄像头设备，或者视频文件路径
 cap = cv2.VideoCapture(video_path)
 
 if not cap.isOpened():

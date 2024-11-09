@@ -25,7 +25,7 @@ yolo_model.to(device)
 product_classes = [
     "Lemon Drink",
     "Bottle",
-    "Oreo cookies",
+    "南孚电池",
     "三得利无糖乌龙茶",
     "阿萨姆奶茶",
     "六神花露水",
