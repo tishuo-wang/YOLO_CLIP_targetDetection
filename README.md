@@ -99,7 +99,7 @@ python test_YOLO_video.py
 ![alt text](image.png)
 - **视频检测结果**：
 
-(后续添加)
+![alt text](video.gif)
 
 ## 6. 数据集准备
 
