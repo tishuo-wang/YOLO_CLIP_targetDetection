@@ -68,7 +68,7 @@ pip install open_clip_torch
 python CLIP_fine_tune_test.py
 ```
 已经微调好的示例模型可以在下面这个链接下载：
-链接：https://pan.baidu.com/s/1l_MBAu2RwivtJNd4TwdLlQ?pwd=wts0 
+链接：https://pan.baidu.com/s/13tT1wWS9n95BPWxv6pTlnA?pwd=wts0
 提取码：wts0
 
 ### 2. 图像检测
