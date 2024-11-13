@@ -37,7 +37,7 @@ product_classes = [
 ]
 
 # 读取输入图片
-image_path = 'dataset/test_CLIP_1.jpg'
+image_path = 'dataset/test_CLIP_14.jpg'
 image = cv2.imread(image_path)
 if image is None:
     raise FileNotFoundError(f"Image not found at path: {image_path}")

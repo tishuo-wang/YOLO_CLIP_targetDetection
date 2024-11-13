@@ -20,6 +20,7 @@ tokenizer = open_clip.get_tokenizer('ViT-B-32')
 yolo_model = YOLO('yolov10s.pt')
 yolo_model.to(device)
 
+
 # 定义商品类别列表
 product_classes = [
     "Lemon Drink",
