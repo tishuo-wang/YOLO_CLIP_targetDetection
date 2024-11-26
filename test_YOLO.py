@@ -37,7 +37,7 @@ product_classes = [
 ]
 
 # 读取输入图片
-image_path = 'dataset/test_CLIP_14.jpg'
+image_path = 'dataset/test_CLIP_7.jpg'
 image = cv2.imread(image_path)
 if image is None:
     raise FileNotFoundError(f"Image not found at path: {image_path}")
@@ -68,6 +68,11 @@ for _ in range(1):
         y1 = max(0, y1)
         x2 = min(image.shape[1], x2)
         y2 = min(image.shape[0], y2)
+
+        # 过滤框
+        print((x2 - x1) * (y2 - y1))
+        if (x2 - x1) * (y2 - y1) > 2000000:
+            continue
 
         try:
             # 裁剪检测到的物体区域

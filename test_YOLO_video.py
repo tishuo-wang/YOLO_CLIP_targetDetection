@@ -37,7 +37,7 @@ product_classes = [
 ]
 
 # 读取视频流
-video_path = 1  # 摄像头设备，或者视频文件路径
+video_path = r"C:\Users\33080\Desktop\test_video.mp4"  # 摄像头设备，或者视频文件路径
 cap = cv2.VideoCapture(video_path)
 
 if not cap.isOpened():
@@ -74,6 +74,11 @@ while True:
         y1 = max(0, y1)
         x2 = min(frame.shape[1], x2)
         y2 = min(frame.shape[0], y2)
+
+        # # 过滤框
+        # print((x2 - x1) * (y2 - y1))
+        # if (x2 - x1) * (y2 - y1) > 50000:
+        #     continue
 
         try:
             # 裁剪检测到的物体区域
